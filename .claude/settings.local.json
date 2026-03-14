@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(command -v nvm)",
+      "Bash(source ~/.nvm/nvm.sh)",
+      "Bash(nvm --version)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/viktoriatyrous/.nvm/versions/**)",
+      "Bash(brew list:*)",
+      "Bash(brew --version)",
+      "Bash(brew info:*)",
+      "Bash(brew install:*)",
+      "Bash(/usr/local/Cellar/node/25.8.1/bin/node -v)",
+      "Bash(/usr/local/bin/node -v)",
+      "Bash(sudo brew:*)",
+      "Bash(ls -la /usr/local/bin/node* /usr/local/bin/npm* /usr/local/bin/npx*)",
+      "Bash(export PATH=\"/usr/local/Cellar/node/25.8.1/bin:$PATH\")",
+      "Bash(npm -v)",
+      "Bash(ln -sf /usr/local/Cellar/node/25.8.1/bin/node /usr/local/bin/node)",
+      "Bash(ln -sf /usr/local/Cellar/node/25.8.1/bin/npm /usr/local/bin/npm)",
+      "Bash(ln -sf /usr/local/Cellar/node/25.8.1/bin/npx /usr/local/bin/npx)",
+      "Read(//Users/viktoriatyrous/vs code/**)",
+      "Bash(npx create-next-app@latest \"Project 1\" --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-turbopack --yes)",
+      "Bash(npm install:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(pnpm --version)",
+      "Bash(pnpm install:*)",
+      "Bash(echo $SHELL)",
+      "Bash(fzf --version)",
+      "Bash(eza --version)",
+      "Bash(bat --version)",
+      "Bash(zoxide --version)",
+      "Bash(delta --version)",
+      "Bash(oh-my-posh --version)",
+      "Read(//Users/viktoriatyrous/vs code/Project 1/$\\(brew --prefix oh-my-posh 2>/dev/null\\)/**)",
+      "Bash(fc-list)",
+      "Read(//Users/viktoriatyrous/Library/Fonts/**)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
