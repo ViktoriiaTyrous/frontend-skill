@@ -175,7 +175,7 @@ a {
   font-size: 18px;
   line-height: 28px;
   color: var(--color-paragraph);
-  max-width: 420px;
+  white-space: nowrap;
 }
 
 /* Feature Cards — tight to content */
@@ -194,7 +194,7 @@ a {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius-xl);
-  padding: 20px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -280,7 +280,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 48px 48px 0;
-  gap: 3px;
+  gap: 4px;
 }
 
 .auth-card__logo {
@@ -312,12 +312,12 @@ a {
   letter-spacing: -1.4px;
   color: var(--color-heading-dark);
   text-align: center;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 /* Form */
 .auth-form {
-  padding: 30px 48px 0;
+  padding: 32px 48px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -403,23 +403,25 @@ a {
 
 .toggle-password {
   position: absolute;
-  right: 12px;
+  right: 4px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
   color: var(--color-paragraph);
-  padding: 4px;
-  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .toggle-password:hover {
   color: var(--color-title);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .toggle-password:focus-visible {
@@ -570,7 +572,7 @@ a {
 .auth-card__footer {
   background: var(--gradient-brand);
   padding: 24px;
-  margin-top: 30px;
+  margin-top: 32px;
   text-align: center;
 }
 
@@ -688,6 +690,14 @@ a {
   cursor: pointer;
   padding: 0;
   transition: opacity 0.3s, width 0.3s;
+  position: relative;
+}
+
+/* Expand touch target to 44px without changing visual size */
+.testimonials__dot::before {
+  content: "";
+  position: absolute;
+  inset: -19px -10px;
 }
 
 .testimonials__dot.active {
@@ -751,6 +761,10 @@ a {
 
   .brand-heading {
     font-size: 36px;
+  }
+
+  .brand-subtext {
+    white-space: normal;
   }
 
   .feature-cards {
@@ -825,7 +839,7 @@ a {
 
   .auth-form {
     padding: 24px 24px 0;
-    gap: 20px;
+    gap: 24px;
   }
 
   .auth-card__footer {
